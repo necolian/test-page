@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     if (!h1){
         h1 = "テストページだお☆";
     }
-    res.render("index",{h1: h1, message: message});
+    res.render("index.ejs",{h1: h1, message: message});
 });
 
 module.exports = app;
