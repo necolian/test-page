@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     if !(h1){
         h1 = "テストページだお☆";
     }
-    res.render("index",{"h1": h1,"message": message});
+    res.render("index",{h1: h1, message: message});
 });
 
 app.listen(3000, '0.0.0.0', () => { 
