@@ -16,6 +16,4 @@ app.get('/', (req, res) => {
     res.render("index",{h1: h1, message: message});
 });
 
-app.listen(3000, '0.0.0.0', () => { 
-    console.log("port is open");
-});
+module.exports = app;
